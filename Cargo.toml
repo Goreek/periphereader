@@ -2,7 +2,15 @@
 name = "periphereader"
 version = "0.1.0"
 edition = "2021"
+authors = ["Goreek"]
+
+build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+slint = "1.3.2"
+# i-slint-compiler = { workspace = true, features = ["default", "rust", "display-diagnostics", "software-renderer"] }
+
+[build_dependencies]
+slint-build = "1.3.2"

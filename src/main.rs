@@ -1,3 +1,5 @@
+slint::include_modules!();
+
 fn main() {
-    println!("Under construction...");
+    MainWindow::new().unwrap().run().unwrap();
 }

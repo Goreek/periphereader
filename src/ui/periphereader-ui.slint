@@ -1,0 +1,39 @@
+// Copyright © Goreek <goreek@gmail.com>
+// Periphereader-License-Identifier: MIT
+
+export component MainWindow inherits Window {
+
+    title: "PERIPHEREADER";
+    width: 800px;
+    height: 600px;
+
+    Rectangle {
+        y:0;
+        width: parent.width * 90%;
+        height: 40px;
+        x: (parent.width - self.width) / 2;
+
+        HorizontalLayout {
+            spacing: 0px;
+
+            Text {
+                text: " SETTINGS ";
+                font-size: 12px;
+                color: #101010;
+                vertical-alignment: center;
+            }
+            Text {
+                text: " OPEN ";
+                font-size: 12px;
+                color: #101010;
+                vertical-alignment: center;
+            }
+            Text {
+                text: " CALIBRATE ";
+                font-size: 12px;
+                color: #101010;
+                vertical-alignment: center;
+            }
+        }
+    }
+}
